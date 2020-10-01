@@ -1,0 +1,43 @@
+MAIN FILE
+
+
+print("Hello! This program helps you to find you area and perimeter of a square and circle.")
+print("square or circle")
+
+n1 = str(input())
+
+if "square" in n1:
+    import hw_sq.py
+
+else:
+    import hw_cr.py
+
+--------------------------------------
+FILE NAME - hw_sq.py
+
+print("Enter your Length")
+n1 = int(input())
+print("Enter your Width")
+n2 = int(input())
+print("Area or Perimeter")
+n3 = str(input())
+
+if "Area" in n3:
+    print("Area is", n1*n2)
+
+elif "Perimeter" in n3:
+    print("Perimeter is", 2*(n1+n2))
+
+else:
+    print("Invalid Statement")
+
+----------------------------------------
+FILE NAME -  hw_cr.py
+
+var1 = 22/7
+
+print("Enter Radius")
+n1 = int(input())
+print("Area of circle is ", var1*n1*n1)
+
+
